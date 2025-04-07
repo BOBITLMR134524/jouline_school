@@ -1,0 +1,453 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 70, 102, 0.8);
+    color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #007bff;
+    transform: translateY(-2px);
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Index Page Specific Styles */
+.home-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/school-background-fvzmkdcjswmjz5y7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.home-page header {
+    background-color: transparent;
+}
+
+.home-page nav ul {
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+.home-page main {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #333;
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #006633;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 1.5rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background: #00804d;
+    transform: translateX(10px);
+}
+
+
+/* Main content area with sidebar */
+.main-content {
+    margin-left: 250px;
+    padding: 2rem;
+    transition: margin-left 0.3s ease;
+}
+
+/* Menu Button for mobile */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #006633;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1100;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: #00804d;
+}
+
+/* Login Page Styles */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #004466, #006633);
+}
+
+.login-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    margin: 1rem;
+}
+
+.login-container h1 {
+    color: #004466;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login-container h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #004466;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #004466;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #006699;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    color: #d9534f;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .home-page main {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
+/* About Page Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+section {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+}
+
+strong {
+    color: #2c3e50;
+}
+
+em {
+    font-style: italic;
+    color: #e74c3c;
+}
+
+/* Core Values Section */
+section:nth-of-type(1) {
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    border-left: 5px solid #3498db;
+}
+
+/* Notable Alumni Section */
+section:nth-of-type(2) {
+    background: linear-gradient(to right, #ffffff, #f8f9fa);
+    border-left: 5px solid #e74c3c;
+}
+
+section:nth-of-type(2) li:before {
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    main {
+        padding: 0 1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+section:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+section:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+/* Motto Styling */
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}

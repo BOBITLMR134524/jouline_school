@@ -1,0 +1,92 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Jouline School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Academics</h1>
+    </header>
+    <main>
+        <p>We offer a well-rounded curriculum including Mathematics, Science, English, and more.</p>
+    </main>
+</body>
+</html>
+<h2>Academics at Jouline School</h2>
+                    <p>Jouline School offers a well-structured and challenging academic curriculum that ensures students are equipped with the knowledge and skills needed for future success. Our academic programs cover a broad spectrum of subjects, including Mathematics, Science, English, Social Studies, and Computer Studies. Additionally, we offer elective courses such as Business Studies, French, Music, and Art & Design to cater to diverse student interests.</p>
+
+                    <p>In addition to classroom learning, we provide students with opportunities to participate in academic activities and research initiatives. We host science fairs, mathematics competitions, and literary workshops**, encouraging students to apply their knowledge beyond textbooks. Our research programs help students develop analytical and problem-solving skills through hands-on projects, guided by expert faculty members.</p>
+                `;
+
+                
+.Academics.html {
+    background-image: url('images/download\ \(13\).jpg'); /* Ensure the correct image path */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Ensures text is readable on a dark background */
+    font-family: Arial, sans-serif;
+}
+
+
+    <!-- Signup Form -->
+    <form id="signupForm">
+        <p class="mandatory">Mandatory to fill</p>
+        <table>
+            <tr>
+                <td><label for="firstname">Firstname:</label></td>
+                <td><input type="text" id="firstname" required> <span class="required">*</span></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Lastname:</label></td>
+                <td><input type="text" id="lastname"></td>
+            </tr>
+            <tr>
+                <td><label for="birthday">Birthday:</label></td>
+                <td>
+                    <select id="day">
+                        <option>Day</option>
+                    </select>
+                    <select id="month">
+                        <option>Month</option>
+                    </select>
+                    <select id="year">
+                        <option>Year</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" required> <span class="required">*</span></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" required> <span class="required">*</span></td>
+            </tr>
+            <tr>
+                <td><label for="repassword">Re-password:</label></td>
+                <td><input type="password" id="repassword" required> <span class="required">*</span></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the terms & conditions.</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Sign up</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
